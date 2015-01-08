@@ -1,0 +1,7 @@
+input.form-control(type='text', placeholder='標籤1' ng-model='formData.yourtags[0]')
+input.form-control(type='text', placeholder='標籤2' ng-model='formData.yourtags[1]')
+input.form-control(type='text', placeholder='標籤3' ng-model='formData.yourtags[2]')
+button.btn.btn-info.pull-right(type='button' ui-sref='mytags') 下一步
+  span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+
+pre {{formData}}

@@ -1,0 +1,9 @@
+input.form-control(type='text' placeholder='姓名' ng-model='formData.contact.name')
+input.form-control(type='text' placeholder='信箱（帳號）' ng-model='formData.contact.email')
+input.form-control(type='password' placeholder='密碼' ng-model='formData.contact.password')
+button.btn.btn-default(type='button' ui-sref='mytags') 返回
+  span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+button.btn.btn-info.pull-right(type='button' ng-click='signUp()') 註冊
+  span.glyphicon.glyphicon-ok(aria-hidden='true')
+
+pre {{formData}}
