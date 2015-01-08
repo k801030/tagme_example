@@ -1,13 +1,12 @@
 extends layout
 
 block content
-  .container.col-sm-offset-4.col-sm-4
-    h1= title
-    p Welcome to #{title}
+  .container.col-sm-offset-4.col-sm-4(ng-app='formApp')
+    .page-header
+      h1= title
+      p Welcome to #{title}
 
-    input.form-control(type='text', placeholder='標籤1')
-    input.form-control(type='text', placeholder='標籤2')
-    input.form-control(type='text', placeholder='標籤3')
-    button.btn.btn-primary(type='button') 下一步
-      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+    form#signup-form(ng-controller='formController')
+      .form-views(ui-view)
+
 
