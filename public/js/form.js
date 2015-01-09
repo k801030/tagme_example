@@ -2,7 +2,6 @@ angular.module('formApp', ['ui.router'])
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
-    
     //nested states
     .state('yourtags', {
       url: '/sign-up',
@@ -16,7 +15,6 @@ angular.module('formApp', ['ui.router'])
     .state('contact', {
       templateUrl: '/form/contact'
     })
-    
     $urlRouterProvider.otherwise('/sign-up');
 })
 
