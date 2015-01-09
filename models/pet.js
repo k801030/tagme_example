@@ -2,15 +2,10 @@ var mongoose = require('mongoose');
 
 // Schema
 var petSchema = mongoose.Schema({
-  name: {
-    type: String,
-    index: true
-  },
+  name: { type: String, index: true },
   type: String,
-  owner_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    index: true
-  }
+  updated: { type: Date, default: Date.now },
+  _id: { type: mongoose.Schema.Types.ObjectId, index: true }
 });
 
 // Method
